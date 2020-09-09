@@ -2365,6 +2365,16 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.center {
+			display: block;
+			margin: 0 0 3em 10em;
+			width: 100%;
+		}
+
+			.image.center img {
+				width: 100%;
+			}
+
 /* List */
 
 	ol {
