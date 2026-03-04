@@ -1,1 +1,11 @@
-theme: jekyll-theme-minimal
+title: "Near-field Cosmology @ UW"
+description: "Research group of Nora Shipp at the University of Washington"
+url: "https://norashipp.com"
+baseurl: ""
+
+# Build settings
+plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
