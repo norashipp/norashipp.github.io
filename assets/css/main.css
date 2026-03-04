@@ -823,3 +823,24 @@ footer a { color: var(--purple-mid); }
     order: -1;
   }
 }
+
+/* ---- CV TALKS TABLE ---- */
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.cv-table td {
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  color: var(--midgray);
+  vertical-align: top;
+}
+.cv-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--lightgray);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  padding-left: 1.5rem;
+}
