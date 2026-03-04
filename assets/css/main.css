@@ -612,21 +612,21 @@ a:hover { text-decoration: underline; }
 
 /* ---- PUBLICATIONS ---- */
 /* pub-preview styles for home page recent publications */
-    .section-heading {
-      font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--purple); margin-bottom: 1.5rem;
-      display: flex; align-items: center; gap: 1rem;
-    }
-    .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
-    .pub-preview {
-      border-bottom: 1px solid var(--rule); padding: 1rem 0;
-      display: grid; grid-template-columns: 2rem 1fr; gap: 0 1rem;
-    }
-    .pub-num { font-family: var(--sans); font-size: 0.72rem; color: var(--purple-light); padding-top: 0.15rem; }
-    .pub-title-preview { font-style: italic; font-size: 0.98rem; color: var(--darkgray); margin-bottom: 0.2rem; }
-    .pub-meta-preview { font-family: var(--sans); font-size: 0.72rem; color: var(--lightgray); }
-    .pub-meta-preview a { color: var(--purple-mid); text-decoration: none; }
-    .pub-meta-preview a:hover { text-decoration: underline; }
+.section-heading {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--purple); margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 1rem;
+}
+.section-heading::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+.pub-preview {
+  border-bottom: 1px solid var(--rule); padding: 1rem 0;
+  display: grid; grid-template-columns: 2rem 1fr; gap: 0 1rem;
+}
+.pub-num { font-family: var(--sans); font-size: 0.72rem; color: var(--purple-light); padding-top: 0.15rem; }
+.pub-title-preview { font-style: italic; font-size: 0.98rem; color: var(--darkgray); margin-bottom: 0.2rem; }
+.pub-meta-preview { font-family: var(--sans); font-size: 0.72rem; color: var(--lightgray); }
+.pub-meta-preview a { color: var(--purple-mid); text-decoration: none; }
+.pub-meta-preview a:hover { text-decoration: underline; }
 
 /* ---- PEOPLE ---- */
 .people-grid {
@@ -736,7 +736,7 @@ footer a { color: var(--purple-mid); }
   display: grid;
   grid-template-columns: 1.6fr 1fr;
   gap: 3rem;
-  align-items: start;
+  align-items: stretch;
   padding: 3.5rem 0 3rem;
 }
 
@@ -760,13 +760,16 @@ footer a { color: var(--purple-mid); }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--lightgray);
-  margin: 0 0 1.2rem;
+  margin: 0 0 0.2rem;
+}
+
+.hero-title:last-of-type {
+  margin-bottom: 1.2rem;
 }
 
 .hero-right {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .hero-gif-wrap {
@@ -774,28 +777,43 @@ footer a { color: var(--purple-mid); }
   border-radius: 6px;
   overflow: hidden;
   background: #faf9f7;
+  flex-shrink: 0;
 }
 
 .hero-gif {
   width: 100%;
   display: block;
   mix-blend-mode: multiply;
-  min-height: 280px;
+  min-height: 380px;
   object-fit: cover;
   object-position: center center;
 }
 
-    .info-block {
-      background: white; border: 1px solid var(--rule);
-      border-left: 3px solid var(--purple); padding: 1.3rem 1.5rem;
-    }
-    .info-label {
-      font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--purple-mid); margin-bottom: 0.6rem;
-    }
-    .info-block p { font-size: 0.9rem; color: var(--midgray); line-height: 1.8; margin: 0; }
-    .info-block a { color: var(--purple-mid); text-decoration: none; }
-    .info-block a:hover { text-decoration: underline; }
+.info-block {
+  background: white; border: 1px solid var(--rule);
+  border-left: 3px solid var(--purple); padding: 1.3rem 1.5rem;
+  margin-top: auto;
+}
+.info-label {
+  font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--purple-mid); margin-bottom: 0.6rem;
+}
+.info-block p { font-size: 0.9rem; color: var(--midgray); line-height: 1.8; margin: 0; }
+.info-block a { color: var(--purple-mid); text-decoration: none; }
+.info-block a:hover { text-decoration: underline; }
+
+/* ---- HOME RECENT PUBS ---- */
+.section-divider {
+  max-width: 860px; margin: 0 auto; padding: 0 2rem;
+  border-top: 1px solid var(--rule);
+}
+.recent { max-width: 860px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+.interest-tag {
+  font-family: var(--sans); font-size: 0.66rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--purple);
+  background: var(--purple-pale); border: 1px solid var(--purple-light);
+  padding: 0.28rem 0.75rem;
+}
 
 @media (max-width: 750px) {
   .home-hero {
