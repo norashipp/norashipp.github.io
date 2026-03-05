@@ -946,3 +946,25 @@ footer a { color: var(--purple-mid); }
   text-decoration: none;
 }
 .key-papers a:hover { text-decoration: underline; }
+
+/* ---- RESEARCH FIGURE ---- */
+.research-figure {
+  margin: 2.5rem 0;
+}
+.research-figure img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.figure-caption {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--lightgray);
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+.figure-caption a {
+  color: var(--purple-mid);
+  text-decoration: none;
+}
+.figure-caption a:hover { text-decoration: underline; }
