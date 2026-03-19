@@ -42,6 +42,8 @@ bundle exec jekyll serve
 
 **CV** ([cv.html](cv.html)): `.cv-section` with `.cv-entry` (grid: content left, date right as `.cv-date`). Talks use `.cv-table`.
 
+**Visuals** ([visuals.html](visuals.html)): `.viz-post` blocks (inline `<style>` in the file) with `.viz-date`, `.viz-title`, `.viz-img`, `.viz-caption`, and `.viz-credit`. Uses page-local CSS rather than classes in main.css.
+
 ## Content Updates
 
 - **New publication:** Add to both [publications.html](publications.html) (full list) and [index.html](index.html) (recent 3 on home page).
